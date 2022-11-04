@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>hexo新建博客</title>
+      <link href="/icesoda105/2022/11/04/hexo%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/"/>
+      <url>/icesoda105/2022/11/04/hexo%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<p>​新建文章 hexo new “文章名”</p><p>![009a0052121237ea261d5364c853cbf](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;009a0052121237ea261d5364c853cbf.jpg)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo基本使用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo启动</title>
+      <link href="/icesoda105/2022/11/04/hexo%E5%90%AF%E5%8A%A8/"/>
+      <url>/icesoda105/2022/11/04/hexo%E5%90%AF%E5%8A%A8/</url>
+      
+        <content type="html"><![CDATA[<p>启动：hexo g , hexo s </p><p>本地地址: <a href="http://localhost:4000/icesoda105/">http://localhost:4000/icesoda105/</a></p><p>![0ac902d998d93a7eb3cc73da75ca03a](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;0ac902d998d93a7eb3cc73da75ca03a.jpg)</p><p>![c41f354d1256e5028cbf2d095ca21c3](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;c41f354d1256e5028cbf2d095ca21c3.jpg)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo基本使用 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Python学习</title>
       <link href="/icesoda105/2022/11/03/Python%E5%AD%A6%E4%B9%A0/"/>
       <url>/icesoda105/2022/11/03/Python%E5%AD%A6%E4%B9%A0/</url>
