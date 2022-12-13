@@ -4,6 +4,203 @@
   
     
     <entry>
+      <title>新建文章</title>
+      <link href="/icesoda105/2022/12/13/%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/"/>
+      <url>/icesoda105/2022/12/13/%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Nacos注册中心</title>
+      <link href="/icesoda105/2022/12/12/Nacos%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83/"/>
+      <url>/icesoda105/2022/12/12/Nacos%E6%B3%A8%E5%86%8C%E4%B8%AD%E5%BF%83/</url>
+      
+        <content type="html"><![CDATA[<ul><li>将Nacos作为注册中心</li></ul><ol><li><p>给common中添加服务注册功能，Nacos依赖</p><p>![image-20221212165628780](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221212165628780.png)</p></li><li><p>在应用的&#x2F;src&#x2F;main&#x2F;res&#x2F;application.properties配置文件中配置Nacos Server地址</p><ul><li><p>首先安装启动Nacos</p><p>![image-20221212172718855](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221212172718855.png)</p><p>![image-20221212172750277](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221212172750277.png)</p><p>![image-20221212174531134](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221212174531134.png)</p></li><li><p>使用@EnableDiscoveryClient注解开启服务注册与发现功能</p><p>![image-20221213092900229](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221213092900229.png)</p></li><li><p>登录nacos（账号密码默认：nacos）</p><p>![image-20221213093059994](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221213093059994.png)</p><p>![image-20221213093151363](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221213093151363.png)</p></li><li><p>此时是没有应用注册到</p><p>![image-20221213093327634](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221213093327634.png)</p></li><li><p>在yml中添加服务名</p><p>![image-20221213093847698](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221213093847698.png)</p></li><li><p>重启</p><p>![image-20221213094029037](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221213094029037.png)</p></li></ul></li></ol><ul><li><p>将Nacos作为配置中心</p><p>![image-20221213100350157](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221213100350157.png)</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> icesodaMall </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分布式组件-SpringCloud-Alibaba</title>
+      <link href="/icesoda105/2022/12/12/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BB%84%E4%BB%B6-SpringCloud-Alibaba/"/>
+      <url>/icesoda105/2022/12/12/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BB%84%E4%BB%B6-SpringCloud-Alibaba/</url>
+      
+        <content type="html"><![CDATA[<h3 id="微服务-注册中心-配置中心-网关"><a href="#微服务-注册中心-配置中心-网关" class="headerlink" title="微服务-注册中心-配置中心-网关"></a>微服务-注册中心-配置中心-网关</h3><p>![image-20221212145658041](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221212145658041.png)</p><ul><li><p>注册中心：Service Discovery :</p><p>​Spring Cloud Netflix : Eureka</p></li><li><p>配置中心：Spring Cloud Config :</p><p>​Spring Cloud Netflix : Zuul</p></li><li><p>本项目使用的是SpringCloud Alibaba提供的分布式组件</p><ul><li>微服务开发的一站式解决方案，包含开发分布式应用微服务的必需组件</li><li>只需要添加一些注解和少量配置，就可以将SpringCloud Alibaba应用接入阿里微服务解决方案，通过阿里中间件来迅速搭建分布式应用系统。</li></ul></li><li><p>SpringCloud:</p><ul><li>部分组件停止维护和更新，给开发带来不便。</li><li>部分环境搭建复杂，没有完善的可视化界面，需要大量的二次开发和定制。</li><li>配置复杂，难以上手，部分配置差别难以区分和合理应用。</li></ul></li><li><p>SpringCloud Alibaba的优势：</p><p>阿里使用过的组件经历了考验，性能强悍，设计合理，现在开源出来大家用成套的产品搭配完善的可视化界面给开发运维带来极大的便利。搭建简单，学习曲线低。</p></li><li><p>结合SpringCloud Alibaba 最终的技术搭配方案：</p><ul><li>SpringCloud Alibaba - Nacos: 注册中心（服务发现、注册）</li><li>SpringCloud Alibaba - Nacos: 配置中心（动态配置管理）</li><li>SpringCloud - Ribbon: 负载均衡</li><li>SpringCloud - Feign: 声明式HTTP客户端（调用远程服务）</li><li>SpringCloud Alibaba - Sentinel: 服务容错（限流、降级、熔断）</li><li>SpringCloud - Gateway: API网关（webflux编程模式）</li><li>SpringCloud - Sleuth: 调用链监控</li><li>SpringCloud Alibaba - Seata: 原 Fescar，即分布式事务解决方案</li></ul></li><li><p>组件</p><ul><li>Sentinel: 把流量作为切入点，从流量控制、熔断降级、系统负载保护等多个维护保护服务的稳定性。</li><li>Nacos: 一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。</li><li>RocketMQ:一款开源的分布式消息系统，基于高可用分布式集群技术，提供低延时的、高可靠的消息发布与订购服务。</li><li>Dubbo: Apache Dubbo(TM)是一款高性能Java RPC框架。</li><li>Seata：阿里巴巴开源产品，一个易于使用的高性能微服务分布式事务解决方案。</li><li>Alibaba Cloud ACM: 一款在分布式架构环境中对应用配置进行集中管理和推送的应用配置中心产品。</li><li>Alibaba Cloud OSS: 阿里云对象存储服务（Object Storage Service,简称 OSS），是阿里云提供的海量、安全、低成本、高可靠的云存储服务。可以在任何应用、任何时间、任何地点存储和访问任意类型的数据。</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> icesodaMall </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>配置&amp;测试微服务基本CRUD功能</title>
+      <link href="/icesoda105/2022/12/12/%E9%85%8D%E7%BD%AE-%E6%B5%8B%E8%AF%95%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%9F%BA%E6%9C%ACCRUD%E5%8A%9F%E8%83%BD/"/>
+      <url>/icesoda105/2022/12/12/%E9%85%8D%E7%BD%AE-%E6%B5%8B%E8%AF%95%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%9F%BA%E6%9C%ACCRUD%E5%8A%9F%E8%83%BD/</url>
+      
+        <content type="html"><![CDATA[<h3 id="整合Mybatis-Plus"><a href="#整合Mybatis-Plus" class="headerlink" title="整合Mybatis-Plus"></a>整合Mybatis-Plus</h3><ul><li><p>导入依赖</p></li><li><p>配置</p><ol><li><p>配置数据库</p><ul><li>导入数据库驱动(对应数据库版本)</li></ul></li><li><p>配置MyBatis-Plus</p><ul><li>使用MapperScan</li><li>告诉Mybatis-Plus，sql映射文件位置</li></ul><p>![image-20221212095723955](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221212095723955.png)</p></li></ol></li><li><p>测试向数据库添加数据</p><p>![image-20221212105303171](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221212105303171.png)</p><p>![image-20221212105328165](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221212105328165.png)</p></li><li><p>修改数据</p><p>![image-20221212110047746](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221212110047746.png)</p><p>![image-20221212110118622](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221212110118622.png)</p></li><li><p>查询数据</p><p>![image-20221212110718033](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221212110718033.png)</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> icesodaMall </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>逆向工程搭建&amp;使用</title>
+      <link href="/icesoda105/2022/12/09/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B%E6%90%AD%E5%BB%BA-%E4%BD%BF%E7%94%A8/"/>
+      <url>/icesoda105/2022/12/09/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B%E6%90%AD%E5%BB%BA-%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>代码生成器</p><p>![image-20221209151432515](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209151432515.png)</p></li><li><p>在module中添加</p><p>![image-20221209151533239](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209151533239.png)</p></li><li><p>修改配置内容</p><p>![image-20221209152223447](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209152223447.png)</p></li><li><p>运行代码生成器</p><p>![image-20221209154450242](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209154450242.png)</p></li><li><p>逐个模块生成本地代码</p><p>![image-20221209160519951](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209160519951.png)</p><p>![image-20221209161742381](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209161742381.png)</p></li><li><p>将生成好的main文件逐个替换到微服务板块中（删除自动生产的前端代码）</p></li><li><p>创建微服务公共工具类&#x2F;bean依赖，集中管理</p><p>![image-20221209162620317](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209162620317.png)</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> icesodaMall </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>后台管理系统-人人开源</title>
+      <link href="/icesoda105/2022/12/09/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E4%BA%BA%E4%BA%BA%E5%BC%80%E6%BA%90/"/>
+      <url>/icesoda105/2022/12/09/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F-%E4%BA%BA%E4%BA%BA%E5%BC%80%E6%BA%90/</url>
+      
+        <content type="html"><![CDATA[<ul><li>人人开源：renren-fast，renren-fast-vue（前后端分离）</li><li>git clone 克隆到本地后删除掉文件中的.git</li></ul><p>![image-20221209110312215](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209110312215.png)</p><ul><li><p>在module中添加 renren-fast</p><p>![image-20221209110523625](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209110523625.png)</p></li><li><p>为后台管理系统创建数据库</p><p>![image-20221209110723267](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209110723267.png)</p></li><li><p>![image-20221209111357846](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209111357846.png)</p></li><li><p>猫一眼配置信息</p><p>![image-20221209111644215](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209111644215.png)</p></li><li><p>修改连接信息</p><p>![image-20221209112016878](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209112016878.png)</p></li><li><p>测试运行</p><p>![image-20221209112139481](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209112139481.png)</p></li></ul><p>![image-20221209112727420](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209112727420.png)</p><ul><li>前端：vscode</li><li>安装node.js : Node.js是一个基于Chrome V8 引擎的JavaScript运行环境。</li><li>NPM随同NODEJS一起安装的包管理工具（使用淘宝镜像）<ul><li>npm install(管理员身份)</li><li>npm run dev</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> icesodaMall </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数据库初始化</title>
+      <link href="/icesoda105/2022/12/09/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E5%A7%8B%E5%8C%96/"/>
+      <url>/icesoda105/2022/12/09/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%88%9D%E5%A7%8B%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>开发工具：PowerDesigner</p><p>![image-20221209092956800](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209092956800.png)</p></li></ul><p>![image-20221209093217025](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209093217025.png)</p><ul><li><p>生成数据库</p><p>![image-20221209093554327](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209093554327.png)</p></li></ul><p>![image-20221209093628635](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209093628635.png) </p><ul><li><p>登录数据库测试连接</p><p>![image-20221209094354309](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209094354309.png)</p></li></ul><p>![image-20221209094455462](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209094455462.png)</p><ul><li><p>设置虚拟机docker、mysql开机自启</p><p>![image-20221209094720539](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209094720539.png)</p></li></ul><p>![image-20221209094835224](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209094835224.png)</p><ul><li><p>重启</p><p>![image-20221209095230667](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209095230667.png)</p></li><li><p>PHPstudy启动本地mysql</p></li></ul><p>![image-20221209095821503](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209095821503.png)</p><ul><li>测试连接，password：root</li><li>创建数据库</li></ul><p>![image-20221209100400629](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209100400629.png)</p><ul><li><p>运行sql脚本建表语句</p><p>![image-20221209101830451](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221209101830451.png)</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> icesodaMall </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>环境安装配置</title>
+      <link href="/icesoda105/2022/11/15/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+      <url>/icesoda105/2022/11/15/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>jdk版本要求1.8+</p><p>![image-20221115131705443](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221115131705443.png)</p></li><li><p>Maven版本</p><p>![image-20221115131820927](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221115131820927.png)</p></li><li><p>替换镜像</p><p>![image-20221115132153587](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221115132153587.png)</p><p>替换为阿里云镜像</p><p>![image-20221115132332622](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221115132332622.png)</p><p>![image-20221115132751068](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221115132751068.png)</p></li><li><p>idea整合maven</p><p>![image-20221115133012521](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221115133012521.png)</p></li><li><p>idea安装插件</p><ul><li><p>lombok 简化开发</p><p>![image-20221115133950708](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221115133950708.png)</p></li><li><p>mybatisx mybatisPlus提供的快速定位到xml</p><p>![image-20221115134115690](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221115134115690.png)</p></li></ul></li><li><p>前端开发 vscode 插件安装</p><p>![image-20221115134649040](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221115134649040.png)</p></li><li><p>配置git</p></li><li><p>创建每一个微服务模块</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> icesodaMall </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>安装docker</title>
+      <link href="/icesoda105/2022/11/11/%E5%AE%89%E8%A3%85docker/"/>
+      <url>/icesoda105/2022/11/11/%E5%AE%89%E8%A3%85docker/</url>
+      
+        <content type="html"><![CDATA[<h3 id="docker"><a href="#docker" class="headerlink" title="docker"></a>docker</h3><h4 id="：虚拟化容器技术，docker基于镜像，可以秒级启动各种容器。每一种容器都是一个完整的运行环境，容器之间互相隔离。"><a href="#：虚拟化容器技术，docker基于镜像，可以秒级启动各种容器。每一种容器都是一个完整的运行环境，容器之间互相隔离。" class="headerlink" title="：虚拟化容器技术，docker基于镜像，可以秒级启动各种容器。每一种容器都是一个完整的运行环境，容器之间互相隔离。"></a>：虚拟化容器技术，docker基于镜像，可以秒级启动各种容器。每一种容器都是一个完整的运行环境，容器之间互相隔离。</h4><ul><li><p>卸载之前的docker</p><p>![image-20221111160409130](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111160409130.png)</p></li><li><p>安装依赖</p><p>![image-20221111160643690](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111160643690.png)</p><p>![image-20221111160703937](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111160703937.png)</p></li><li><p>安装地址</p><p>![image-20221111160828423](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111160828423.png)</p></li><li><p>安装docker以及 docker-cli docker的引擎、操作docker的客户端和它的容器</p><p>![image-20221111161337161](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111161337161.png)</p><p>![image-20221111161356534](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111161356534.png)</p></li><li><p>启动docker及设置开机自启</p><p>![image-20221111161630998](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111161630998.png)</p><p>![image-20221111161739522](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111161739522.png)</p></li><li><p>配置docker国内的镜像加速（阿里云）方便后续安装mysql、redis</p><p>![image-20221111162218713](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111162218713.png)</p><p>![image-20221111162309209](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111162309209.png)</p><p>![image-20221111162442526](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111162442526.png)</p></li><li><p>docker安装mysql</p><p>![image-20221111162756000](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111162756000.png)</p><p>![image-20221111163717724](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111163717724.png)</p></li><li><p>创建实例并启动</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 3306:3306 --name mysql \</span><br><span class="line"></span><br><span class="line">-v /mydata/mysql/log:/var/log/mysql \</span><br><span class="line"></span><br><span class="line">-v /mydata/mysql/data:/var/lib/mysql \</span><br><span class="line"></span><br><span class="line">-v /mydata/mysql/conf:/etc/mysql \</span><br><span class="line"></span><br><span class="line">-e MYSQL_ROOT_PASSWORD=root \</span><br><span class="line"></span><br><span class="line">-d mysql:5.7</span><br></pre></td></tr></table></figure><p>参数说明</p><blockquote><p>-p 3306:3306：将容器的 3306 端口映射到主机的 3306 端口</p><p>-v &#x2F;mydata&#x2F;mysql&#x2F;conf:&#x2F;etc&#x2F;mysql：将配置文件夹挂载到主机</p><p>-v &#x2F;mydata&#x2F;mysql&#x2F;log:&#x2F;var&#x2F;log&#x2F;mysql：将日志文件夹挂载到主机</p><p>-v &#x2F;mydata&#x2F;mysql&#x2F;data:&#x2F;var&#x2F;lib&#x2F;mysql&#x2F;：将配置文件夹挂载到主机</p><p>-e MYSQL_ROOT_PASSWORD&#x3D;root：初始化 root </p></blockquote></li><li><p>切换root用户</p><p>账号密码： vagrant</p><p>![image-20221111164331983](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111164331983.png)</p></li><li><p>主机测试虚拟机安装的mysql</p></li><li><p>![image-20221111164644679](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111164644679.png)</p><p>![image-20221111164737720](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111164737720.png)</p><ul><li>mysql 一个完整且独立的运行环境 处于一个微型的Linux环境中</li></ul><p>![image-20221111165409920](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111165409920.png)</p><ul><li>mysql配置文件的修改</li></ul><p>![image-20221111174724965](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111174724965.png)</p></li><li><p>docker安装redis</p><ul><li><p>下载镜像</p><p>![image-20221114125704629](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221114125704629.png)</p></li><li><p>创建实例并启动</p><p>![image-20221114130214450](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221114130214450.png)</p><p>![image-20221114130452568](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221114130452568.png)</p></li><li><p>默认持久化</p><p>![image-20221114130935287](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221114130935287.png)</p><p>![image-20221114131001613](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221114131001613.png)</p><p>![image-20221114131349501](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221114131349501.png)</p></li><li><p>redis可视化客户端</p><p>![image-20221114131442405](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221114131442405.png)</p><p>![image-20221114131650131](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221114131650131.png)</p><p>![image-20221114131721883](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221114131721883.png)</p><p>![image-20221114132103861](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221114132103861.png)</p></li><li><p>redis官方文档</p><p>![image-20221114132423894](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221114132423894.png)</p><p>![image-20221114132540825](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221114132540825.png)</p></li></ul></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows-虚拟机网络桥接</title>
+      <link href="/icesoda105/2022/11/11/Windows-%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A1%A5%E6%8E%A5/"/>
+      <url>/icesoda105/2022/11/11/Windows-%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A1%A5%E6%8E%A5/</url>
+      
+        <content type="html"><![CDATA[<h3 id="网络地址转换-端口转发"><a href="#网络地址转换-端口转发" class="headerlink" title="网络地址转换-端口转发"></a>网络地址转换-端口转发</h3><ul><li><p>避免主机和Linux下端口映射工作的冗余,给虚拟机一个固定的ip地址，方便Windows和Linux  ping</p><p>![image-20221111151315046](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111151315046.png)</p><p>![image-20221111151622995](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111151622995.png)</p><p>![image-20221111153033521](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111153033521.png)</p><p>![image-20221111152152824](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111152152824.png)</p><p>![image-20221111153348804](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111153348804.png)</p><ul><li>互ping</li></ul></li></ul><p>![image-20221111154043372](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111154043372.png)</p><p>  ![image-20221111154019687](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111154019687.png)</p><p>![image-20221111154240896](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111154240896.png)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> icesodaMall </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>icesodaMall基础环境搭建及启动</title>
+      <link href="/icesoda105/2022/11/10/icesodaMall%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%8F%8A%E5%90%AF%E5%8A%A8/"/>
+      <url>/icesoda105/2022/11/10/icesodaMall%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%8F%8A%E5%90%AF%E5%8A%A8/</url>
+      
+        <content type="html"><![CDATA[<h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><p>​virtualBox、vagrant（D:\HashiCorp\Vagrant）</p><ul><li><p>vagrant版本 命令<br>![image-20221111143948448](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111143948448.png)</p></li><li><p>vagrant初始化一个虚拟机</p></li></ul><p>![image-20221111144235470](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111144235470.png)</p><ul><li>whoami</li></ul><p>![image-20221111144818744](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111144818744.png)</p><ol><li>启动Linux虚拟机——virtualBox</li><li>启动vagrant连接virtualBox（E:\vagrantMall）<ul><li>vagrant ssh（Windows环境下）</li></ul></li></ol><p>![image-20221111144638849](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221111144638849.png)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> icesodaMall </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo新建博客</title>
       <link href="/icesoda105/2022/11/04/hexo%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/"/>
       <url>/icesoda105/2022/11/04/hexo%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/</url>
