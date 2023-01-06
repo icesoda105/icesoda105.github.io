@@ -10,7 +10,7 @@ sticky: 1
 
 ### 微服务-注册中心-配置中心-网关
 
-![image-20221212145658041](D:/Program Files/Typora/resources/image/image-20221212145658041.png)
+![image-20221212145658041](https://cdn.jsdelivr.net/gh/icesoda105/PicgoWorkspace/img/image-20221212145658041.png)
 
 - 注册中心：Service Discovery :
 
