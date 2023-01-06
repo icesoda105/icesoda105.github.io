@@ -115,3 +115,11 @@ deploy:
 #   github: https://github.com/icesoda105/icesoda105.github.io.git
 # branch: master
 
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10005
+  # content: true
+  # template: ./search.xml
+
