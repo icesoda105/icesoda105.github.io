@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>seanBlog的远程仓库推送</title>
+      <link href="/icesoda105/2022/12/19/seanBlog%E7%9A%84%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E6%8E%A8%E9%80%81/"/>
+      <url>/icesoda105/2022/12/19/seanBlog%E7%9A%84%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93%E6%8E%A8%E9%80%81/</url>
+      
+        <content type="html"><![CDATA[<h4 id="github"><a href="#github" class="headerlink" title="github"></a>github</h4><ul><li><p>create a new repository on the command line</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;# seanblog&quot; &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m &quot;first commit&quot;</span><br><span class="line">git branch -M main</span><br><span class="line">git remote add origin git@github.com:icesoda105/seanblog.git</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure></li><li><h3 id="push-an-existing-repository-from-the-command-line"><a href="#push-an-existing-repository-from-the-command-line" class="headerlink" title="push an existing repository from the command line"></a>push an existing repository from the command line</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:icesoda105/seanblog.git</span><br><span class="line">git branch -M main</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> icesodaMall </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>新建文章</title>
       <link href="/icesoda105/2022/12/13/%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/"/>
       <url>/icesoda105/2022/12/13/%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0/</url>
@@ -40,7 +59,7 @@
       <link href="/icesoda105/2022/12/12/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BB%84%E4%BB%B6-SpringCloud-Alibaba/"/>
       <url>/icesoda105/2022/12/12/%E5%88%86%E5%B8%83%E5%BC%8F%E7%BB%84%E4%BB%B6-SpringCloud-Alibaba/</url>
       
-        <content type="html"><![CDATA[<h3 id="微服务-注册中心-配置中心-网关"><a href="#微服务-注册中心-配置中心-网关" class="headerlink" title="微服务-注册中心-配置中心-网关"></a>微服务-注册中心-配置中心-网关</h3><p>![image-20221212145658041](D:&#x2F;Program Files&#x2F;Typora&#x2F;resources&#x2F;image&#x2F;image-20221212145658041.png)</p><ul><li><p>注册中心：Service Discovery :</p><p>​Spring Cloud Netflix : Eureka</p></li><li><p>配置中心：Spring Cloud Config :</p><p>​Spring Cloud Netflix : Zuul</p></li><li><p>本项目使用的是SpringCloud Alibaba提供的分布式组件</p><ul><li>微服务开发的一站式解决方案，包含开发分布式应用微服务的必需组件</li><li>只需要添加一些注解和少量配置，就可以将SpringCloud Alibaba应用接入阿里微服务解决方案，通过阿里中间件来迅速搭建分布式应用系统。</li></ul></li><li><p>SpringCloud:</p><ul><li>部分组件停止维护和更新，给开发带来不便。</li><li>部分环境搭建复杂，没有完善的可视化界面，需要大量的二次开发和定制。</li><li>配置复杂，难以上手，部分配置差别难以区分和合理应用。</li></ul></li><li><p>SpringCloud Alibaba的优势：</p><p>阿里使用过的组件经历了考验，性能强悍，设计合理，现在开源出来大家用成套的产品搭配完善的可视化界面给开发运维带来极大的便利。搭建简单，学习曲线低。</p></li><li><p>结合SpringCloud Alibaba 最终的技术搭配方案：</p><ul><li>SpringCloud Alibaba - Nacos: 注册中心（服务发现、注册）</li><li>SpringCloud Alibaba - Nacos: 配置中心（动态配置管理）</li><li>SpringCloud - Ribbon: 负载均衡</li><li>SpringCloud - Feign: 声明式HTTP客户端（调用远程服务）</li><li>SpringCloud Alibaba - Sentinel: 服务容错（限流、降级、熔断）</li><li>SpringCloud - Gateway: API网关（webflux编程模式）</li><li>SpringCloud - Sleuth: 调用链监控</li><li>SpringCloud Alibaba - Seata: 原 Fescar，即分布式事务解决方案</li></ul></li><li><p>组件</p><ul><li>Sentinel: 把流量作为切入点，从流量控制、熔断降级、系统负载保护等多个维护保护服务的稳定性。</li><li>Nacos: 一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。</li><li>RocketMQ:一款开源的分布式消息系统，基于高可用分布式集群技术，提供低延时的、高可靠的消息发布与订购服务。</li><li>Dubbo: Apache Dubbo(TM)是一款高性能Java RPC框架。</li><li>Seata：阿里巴巴开源产品，一个易于使用的高性能微服务分布式事务解决方案。</li><li>Alibaba Cloud ACM: 一款在分布式架构环境中对应用配置进行集中管理和推送的应用配置中心产品。</li><li>Alibaba Cloud OSS: 阿里云对象存储服务（Object Storage Service,简称 OSS），是阿里云提供的海量、安全、低成本、高可靠的云存储服务。可以在任何应用、任何时间、任何地点存储和访问任意类型的数据。</li></ul></li></ul>]]></content>
+        <content type="html"><![CDATA[<h3 id="微服务-注册中心-配置中心-网关"><a href="#微服务-注册中心-配置中心-网关" class="headerlink" title="微服务-注册中心-配置中心-网关"></a>微服务-注册中心-配置中心-网关</h3><p><img src="https://cdn.jsdelivr.net/gh/icesoda105/PicgoWorkspace/img/image-20221212145658041.png" alt="image-20221212145658041"></p><ul><li><p>注册中心：Service Discovery :</p><p>​Spring Cloud Netflix : Eureka</p></li><li><p>配置中心：Spring Cloud Config :</p><p>​Spring Cloud Netflix : Zuul</p></li><li><p>本项目使用的是SpringCloud Alibaba提供的分布式组件</p><ul><li>微服务开发的一站式解决方案，包含开发分布式应用微服务的必需组件</li><li>只需要添加一些注解和少量配置，就可以将SpringCloud Alibaba应用接入阿里微服务解决方案，通过阿里中间件来迅速搭建分布式应用系统。</li></ul></li><li><p>SpringCloud:</p><ul><li>部分组件停止维护和更新，给开发带来不便。</li><li>部分环境搭建复杂，没有完善的可视化界面，需要大量的二次开发和定制。</li><li>配置复杂，难以上手，部分配置差别难以区分和合理应用。</li></ul></li><li><p>SpringCloud Alibaba的优势：</p><p>阿里使用过的组件经历了考验，性能强悍，设计合理，现在开源出来大家用成套的产品搭配完善的可视化界面给开发运维带来极大的便利。搭建简单，学习曲线低。</p></li><li><p>结合SpringCloud Alibaba 最终的技术搭配方案：</p><ul><li>SpringCloud Alibaba - Nacos: 注册中心（服务发现、注册）</li><li>SpringCloud Alibaba - Nacos: 配置中心（动态配置管理）</li><li>SpringCloud - Ribbon: 负载均衡</li><li>SpringCloud - Feign: 声明式HTTP客户端（调用远程服务）</li><li>SpringCloud Alibaba - Sentinel: 服务容错（限流、降级、熔断）</li><li>SpringCloud - Gateway: API网关（webflux编程模式）</li><li>SpringCloud - Sleuth: 调用链监控</li><li>SpringCloud Alibaba - Seata: 原 Fescar，即分布式事务解决方案</li></ul></li><li><p>组件</p><ul><li>Sentinel: 把流量作为切入点，从流量控制、熔断降级、系统负载保护等多个维护保护服务的稳定性。</li><li>Nacos: 一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。</li><li>RocketMQ:一款开源的分布式消息系统，基于高可用分布式集群技术，提供低延时的、高可靠的消息发布与订购服务。</li><li>Dubbo: Apache Dubbo(TM)是一款高性能Java RPC框架。</li><li>Seata：阿里巴巴开源产品，一个易于使用的高性能微服务分布式事务解决方案。</li><li>Alibaba Cloud ACM: 一款在分布式架构环境中对应用配置进行集中管理和推送的应用配置中心产品。</li><li>Alibaba Cloud OSS: 阿里云对象存储服务（Object Storage Service,简称 OSS），是阿里云提供的海量、安全、低成本、高可靠的云存储服务。可以在任何应用、任何时间、任何地点存储和访问任意类型的数据。</li></ul></li></ul>]]></content>
       
       
       <categories>
