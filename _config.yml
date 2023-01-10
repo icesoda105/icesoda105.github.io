@@ -104,10 +104,16 @@ theme: butterfly
 
 deploy:
   type: git
-  # repo: git@github.com:icesoda105/icesoda105.github.io.git
-  #  repo: git@github.com:icesoda105/seanblog.git
-  repo: https://github.com/icesoda105/icesoda105.github.io
+  repository: https://github.com/icesoda105/icesoda105.github.io.git
   branch: master
+
+
+#deploy:
+#  type: git
+#   repo: git@github.com:icesoda105/icesoda105.github.io.git
+#    repo: git@github.com:icesoda105/seanblog.git
+#  repo: https://github.com/icesoda105/icesoda105.github.io
+#  branch: master
 #  branch: main
 
 #deploy:
