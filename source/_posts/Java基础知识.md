@@ -7,7 +7,7 @@ categories:
 description:
 ---
 
-![740942_1470042423855_86F5A9F9F791DD7EA7C96F158F0FEA87](D:/Program Files/Typora/resources/image/740942_1470042423855_86F5A9F9F791DD7EA7C96F158F0FEA87.jpg)
+![740942_1470042423855_86F5A9F9F791DD7EA7C96F158F0FEA87](https://cdn.jsdelivr.net/gh/icesoda105/PicgoWorkspace/img/740942_1470042423855_86F5A9F9F791DD7EA7C96F158F0FEA87.jpg)
 
 #### 定义
 
@@ -50,6 +50,7 @@ description:
    **适用**：
 
    			1. 频繁访问列表中的某一个元素。
+
       			2. 只需要在列表末尾进行添加和删除元素操作。
 
 2. LinkedList     `import java.util.LinkedList;`
