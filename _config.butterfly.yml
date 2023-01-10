@@ -130,6 +130,13 @@ cover:
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面展示)
   default_cover:
     - https://cdn.pixabay.com/photo/2022/12/16/15/53/island-7660016__340.jpg
+    - https://cdn.pixabay.com/photo/2022/10/20/11/26/landscape-7534634_640.jpg
+    - https://cdn.pixabay.com/photo/2022/12/17/14/17/winter-7661769__340.jpg
+    - https://cdn.pixabay.com/photo/2022/12/21/20/43/view-7670868__340.jpg
+    - https://cdn.pixabay.com/photo/2022/11/12/14/05/venice-7587071__340.jpg
+    - https://cdn.pixabay.com/photo/2022/12/03/15/00/maui-7632875__340.jpg
+    - https://cdn.pixabay.com/photo/2022/11/20/18/32/winter-7604917__340.jpg
+    - https://cdn.pixabay.com/photo/2022/12/09/22/55/trees-7646226__340.jpg
 
 # Replace Broken Images (替换无法展示的图片)
 error_img:
