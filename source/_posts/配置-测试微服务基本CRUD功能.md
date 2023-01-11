@@ -22,22 +22,22 @@ description:
      - 使用MapperScan
      - 告诉Mybatis-Plus，sql映射文件位置
 
-     ![image-20221212095723955](D:/Program Files/Typora/resources/image/image-20221212095723955.png)
+     ![image-20221212095723955](https://cdn.jsdelivr.net/gh/icesoda105/PicgoWorkspace/img/image-20221212095723955.png)
 
      
 
 - 测试向数据库添加数据
 
-  ![image-20221212105303171](D:/Program Files/Typora/resources/image/image-20221212105303171.png)
+  ![image-20221212105303171](https://cdn.jsdelivr.net/gh/icesoda105/PicgoWorkspace/img/image-20221212105303171.png)
 
-  ![image-20221212105328165](D:/Program Files/Typora/resources/image/image-20221212105328165.png)
+  ![image-20221212105328165](https://cdn.jsdelivr.net/gh/icesoda105/PicgoWorkspace/img/image-20221212105328165.png)
 
 - 修改数据
 
-  ![image-20221212110047746](D:/Program Files/Typora/resources/image/image-20221212110047746.png)
+  ![image-20221212110047746](https://cdn.jsdelivr.net/gh/icesoda105/PicgoWorkspace/img/image-20221212110047746.png)
 
-  ![image-20221212110118622](D:/Program Files/Typora/resources/image/image-20221212110118622.png)
+  ![image-20221212110118622](https://cdn.jsdelivr.net/gh/icesoda105/PicgoWorkspace/img/image-20221212110118622.png)
 
 - 查询数据
 
-  ![image-20221212110718033](D:/Program Files/Typora/resources/image/image-20221212110718033.png)
+  ![image-20221212110718033](https://cdn.jsdelivr.net/gh/icesoda105/PicgoWorkspace/img/image-20221212110718033.png)
