@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Nacos配置中心</title>
+      <link href="/icesoda105.github.io/2023/01/12/Nacos%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/"/>
+      <url>/icesoda105.github.io/2023/01/12/Nacos%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>文章新建模板测试</title>
       <link href="/icesoda105.github.io/2023/01/12/%E6%96%87%E7%AB%A0%E6%96%B0%E5%BB%BA%E6%A8%A1%E6%9D%BF%E6%B5%8B%E8%AF%95/"/>
       <url>/icesoda105.github.io/2023/01/12/%E6%96%87%E7%AB%A0%E6%96%B0%E5%BB%BA%E6%A8%A1%E6%9D%BF%E6%B5%8B%E8%AF%95/</url>
@@ -37,7 +50,7 @@
       <link href="/icesoda105.github.io/2023/01/12/SpingCloud-OpenFeign%E8%BF%9C%E7%A8%8B%E8%B0%83%E7%94%A8/"/>
       <url>/icesoda105.github.io/2023/01/12/SpingCloud-OpenFeign%E8%BF%9C%E7%A8%8B%E8%B0%83%E7%94%A8/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="OpenFeign"><a href="#OpenFeign" class="headerlink" title="OpenFeign"></a>OpenFeign</h2><blockquote><p>​Feign是一个声明式的HTTP客户端，它的目的就是让远程调用更加简单。Feign提供了HTTP请求的模板，<strong>通过编写简单的接口和插入注解</strong>，就可以定义好HTTP请求的参数、格式、地址等信息。</p><p>​Feign整合了**Ribbon(负载均衡)<strong>和</strong>Hystrix(服务熔断)**可以让我们不再需要显式地使用这两个组件。</p><p>​SpringCloudFeign在NetflixFeign的基础上扩展了对SpringMVC注解的支持，在其实现下，只需创建一个接口并用注解的方式来配置它，即可完成对服务提供方的接口绑定。简化了SpringCloudRibbon自行封装服务调用客户端的开发量。</p></blockquote><ul><li><p>引入依赖</p><p><img src="https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301120943546.png" alt="image-20230112094229204"></p></li><li><p>eg：member调用coupon服务</p><p><img src="https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301120949104.png" alt="image-20230112094857787"></p><p>ps：R代表 <strong>ResultEntity</strong></p></li></ul><h3 id="想要远程调用别的服务"><a href="#想要远程调用别的服务" class="headerlink" title="想要远程调用别的服务"></a>想要远程调用别的服务</h3><ul><li><p>引入open-feign</p></li><li><p>编写一个接口，告诉SpringCloud这个接口需要调用远程服务</p><ol><li>声明接口的每一个方法都是调用哪个远程服务的哪个请求</li></ol><p>  <img src="https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301120957662.png" alt="image-20230112095707363">  </p></li><li><p>开启远程调用功能 </p><p><strong>@EnableFeignClients</strong></p><p><img src="/icesoda105.github.io/upload/image-20230112101033464.png" alt="image-20230112101033464"></p></li><li><p>测试（会员服务中远程调用优惠券）</p><p>在会员服务的controller中调入优惠券远程接口</p><p><img src="https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301121021256.png" alt="image-20230112102151768"></p><p>远程获取结果：（被调用服务必须上线）</p><p><img src="https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301121038255.png" alt="image-20230112103808393"></p></li></ul>]]></content>
       
       
       <categories>
