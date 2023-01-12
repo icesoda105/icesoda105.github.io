@@ -5,7 +5,8 @@ categories:
 tags: [] 
 author: icesoda
 date: {{ date }}
-copyright: true
+toc: false     
+# copyright: true
 cover:
 description:
 
