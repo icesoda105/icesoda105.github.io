@@ -115,3 +115,8 @@ search:
   # content: true
   # template: ./search.xml
 
+# hexo-admin authentification
+admin:
+  username: icesoda
+  password_hash: $2a$10$Mpg6UPtK86sLOAvMk2WR3uUHY1.vXn29/uRjwjbupMQZ/NwfXUtZe
+  secret: xbxyxz.2019
