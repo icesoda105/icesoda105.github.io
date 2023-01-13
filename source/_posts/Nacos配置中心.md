@@ -1,8 +1,8 @@
 ---
 title: Nacos配置中心
 categories:
-  - []
-tags: []
+  - [icesodaMall]
+tags: [Nacos]
 author: icesoda
 date: 2023-01-12 10:44:31
 cover:
@@ -51,7 +51,7 @@ description:
 
   ![image-20230112150707186](https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301121508921.png) 
 1. 添加配置文件信息
-  ![image-20230112150811664](https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301121542548.png)
+    ![image-20230112150811664](https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301121542548.png)
 
   ![image-20230112154234380](https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301121542563.png)
 
@@ -104,12 +104,6 @@ description:
 >
 > ​    每个微服务创建自己的命名空间。使用配置分组，区分环境，dev,test,prod
 >
-> ​    同时加载多个配置集
-> ​    1 微服务任何配置信息 任何配置文件都可以放在配置中心中
-> ​    2 只需要在bootstrap.properties说明加载配置中心中配置哪些配置文件即可
-> ​    3 `@Value @ConfigurationProperties ...`
-> ​    以前SpringBoot任何方式从配置文件中获取值 都能使用
-> ​    配置中心有的优先使用配置中心中的
 
 - 新建命名空间并添加对应配置
 
@@ -132,3 +126,40 @@ description:
   ![image-20230112174915712](https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301121749172.png)
 
   ![image-20230112175231900](https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301121752031.png)
+
+## 加载多配置集
+
+> 同时加载多个配置集
+> 1 微服务任何配置信息 任何配置文件都可以放在配置中心中
+> 2 只需要在bootstrap.properties说明加载配置中心中配置哪些配置文件即可
+> 3 `@Value @ConfigurationProperties ...`
+> 以前SpringBoot任何方式从配置文件中获取值 都能使用
+> 配置中心有的优先使用配置中心中的
+
+- 配置中心添加application.yml中的配置信息
+
+  ![image-20230113093444459](https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301130934424.png)
+
+  ![image-20230113093612065](https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301130936159.png)
+
+- 让微服务启动时同时加载多个配置 以合成一个完成的配置
+
+  ![image-20230113094101656](https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301130941546.png)
+
+  动态刷新
+
+  ```java
+  spring.cloud.nacos.config.extension-configs[0].refresh=true
+  ```
+
+  **指定了命名空间、组名时，找到不对应的配置文件，就会读取本地配置里的配置文件。**
+
+  ![image-20230113094334453](https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301130943851.png)
+
+  `spring.cloud.nacos.config.group=1005`
+
+  ![image-20230113094907253](https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301130949267.png)
+
+- 测试：
+
+  ![image-20230113095245857](https://icesoda-picgo.oss-cn-beijing.aliyuncs.com/imgtest/202301130952854.png)
